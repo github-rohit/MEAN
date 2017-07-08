@@ -1,0 +1,27 @@
+  <div class="page-header-top">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Editing {{formData.title}} {{formData.release_year}}</h1>
+      </div>
+    </div>	
+  </div>
+  <div class="container">
+  <div class="card col-md-8 col-md-offset-2">
+    <div class="card-body card-padding">
+    <form ng-submit="submit()" class="angular-form">
+          <div class="alert alert alert-success" ng-if="response.success">Item saved successfully</div>
+          <div class="alert alert alert-danger" ng-if="response.error">
+            <span ng-if="response.code == 11000">This movie name is already in database.</span>
+            <span ng-if="response.code != 11000">an error occurred while performing this action./span>
+          </div>
+        <form-elements form-data="formData" form-fields="formFields" ng-if="!response.success"></form-elements>
+          <div class="alert alert alert-danger" ng-if="response.error">
+            <span ng-if="response.code == 11000">This movie name is already in database.</span>
+            <span ng-if="response.code != 11000">an error occurred while performing this action./span>
+          </div>
+        <input type="submit" class="btn btn-success" value="Submit"/>
+        <input type="reset" class="btn btn-link btn-sm" value="RESET" />
+    </form>
+    </div>
+  </div>
+  </div>

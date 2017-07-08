@@ -1,0 +1,5 @@
+<div class="form-group" ng-repeat="element in formFields" ng-switch="element.type" ng-if="removeElements(element.name)">
+    <type-textarea ng-switch-when="textarea"></type-textarea>
+    <type-select ng-switch-when="select"></type-select>
+    <type-input ng-switch-default></type-input>
+</div>

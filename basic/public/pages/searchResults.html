@@ -1,0 +1,5 @@
+<div ng-if="searchResult.$resolved">
+	<search-error ng-if="searchResult.error"></search-error>
+	<no-record search-query="{{searchQuery}}" ng-if="searchResult.norecord"></no-record>
+	<search-result ng-if="searchResult.lists" search-query="{{searchQuery}}" lists="searchResult.lists" edit-item="editItem(list)" delete-item="deleteItem(list)"></search-result>
+</div>

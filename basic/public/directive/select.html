@@ -1,0 +1,9 @@
+<div class="form-group">
+    <div class="form-line">
+        <label class="form-label">{{element.label}}<span ng-if="element.required">*</span></label>
+        <select name="{{element.name}}" class="form-control" ng-model="formData[element.name]" ng-focus="onfocus($event)" ng-blur="onfocusOut($event)" ng-switch="element.options">
+            <option value="{{option}}" ng-repeat="option in getYears()" ng-switch-when="years">{{option}}</option>
+            <option value="{{option.value}}" ng-repeat="option in element.options" ng-switch-default ng-if="element.options.length">{{option.label}}</option>
+        </select>
+    </div>
+</div>

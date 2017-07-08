@@ -1,0 +1,33 @@
+  <div  ng-if="!formData.error">
+  <div class="page-header-top">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <h1><span ng-if="!isediting">Add New Movie</span><span ng-if="isediting">Editing {{formData.title}} {{formData.release_year}}</span></h1>
+      </div>
+    </div>	
+  </div>
+  <div class="container">
+  <div class="card col-md-8 col-md-offset-2">
+    <div class="card-body card-padding">
+    <form ng-submit="submit()" class="angular-form">
+          <div class="alert alert alert-success" ng-if="response.success">Item saved successfully</div>
+          <div class="alert alert alert-danger" ng-if="response.error">
+            <span ng-if="response.code == 11000">This movie name is already in database.</span>
+            <span ng-if="response.code != 11000">an error occurred while performing this action./span>
+          </div>
+          <div ng-if="!response.success">
+            <form-elements form-data="formData" form-fields="formFields" remove-elements="removeElements(fieldName)"></form-elements>
+          <div class="alert alert alert-danger" ng-if="response.error">
+            <span ng-if="response.code == 11000">This movie name is already in database.</span>
+            <span ng-if="response.code != 11000">an error occurred while performing this action./span>
+          </div>
+        <input type="submit" class="btn btn-success" value="Submit" ng-disabled="!formData.title || !formData.release_year"/>
+        <input type="reset" class="btn btn-link btn-sm" value="RESET" />
+        <p class="text-info"><br>*Fields are required.</p>            
+          </div>
+    </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  <search-error ng-if="formData.error"></search-error>

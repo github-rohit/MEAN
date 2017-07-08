@@ -1,0 +1,19 @@
+<div class="angular-js-search-list clearfix">
+    <div class="poster col-md-3 col-sm-4"><img ng-src="{{list.poster}}" title="{{rating}}"/></div>
+    <div class="information col-md-9 col-sm-8">
+        <div class="header">
+            <h1>{{list.title}} <span ng-if="list.release_year">({{list.release_year}})</span></h1>
+            <div class="sub-text">
+                <span ng-if="list.contentRating">{{list.contentRating}}</span><span ng-if="list.duration">{{list.duration}}</span><span ng-if="list.release_date">{{list.release_date | date: 'MMMM d, y'}}</span><span ng-if="list.genre">{{list.genre}}</span>
+            </div>
+        </div>
+        <div class="summary-item" ng-if="list.desc">{{list.desc}}</div>
+        <div class="summary-item" ng-if="list.director"><span class="summary-item-label">Director: </span>{{list.director}}</div>
+        <div class="summary-item" ng-if="list.writers"><span class="summary-item-label">Writers: </span>{{list.writers}}</div>
+        <div class="summary-item" ng-if="list.stars"><span class="summary-item-label">Stars: </span>{{list.stars}}</div>
+        <div class="summary-item" ng-if="list.producer"><span class="summary-item-label">Producer: </span>{{list.producer}}</div>
+        <div class="summary-item" ng-if="list.language"><span class="summary-item-label">Language: </span>{{list.language}}</div>
+    </div>
+    <a href="javascript:void(0)" class="btn-add-float ripple delete" title="Click to delete this item" ng-click="deleteItem({list: list})" style="right: 70px;"><i class="fa fa-trash"></i></a>
+    <a href="javascript:void(0)" class="btn-add-float ripple" title="Click to edit this item" ng-click="editItem({list: list})"><i class="fa fa-pencil"></i></a>
+</div>

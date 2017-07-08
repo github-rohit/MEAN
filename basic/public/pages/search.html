@@ -1,0 +1,17 @@
+  <div class="page-header-top">
+    <div class="container">
+      <h1>Search Movie</h1>
+      <a href="#/new" class="btn-add-float ripple">+</a>
+    </div>	
+  </div>
+<div class="container angular-js-search-container" ng-if="formFields[0]">
+	<form ng-submit="submit()">
+		<!--<h1 class="search-page-heading">By {{$parent.searchBy.label}}</h1>-->
+		 <div class="input-group search-control">
+			<dropdown placeholder="Select saerch by" list="formFields" selected="$parent.searchBy" property="label" value="0" ></dropdown>
+			<input type="search" ng-blur="validateSeriesName=true" autofocus ng-model="$parent.searchQuery" placeholder="Enter Movie Name"/>
+		 </div>
+		<p ng-if="!searchQuery && validateSeriesName" class="text-danger">This field is required.</p>
+		<input type="submit" class="search-btn" ng-disabled="!searchQuery" value="Search">
+	</form>
+</div>	

@@ -1,0 +1,83 @@
+[
+  {
+    "type": "text",
+    "name": "title",
+    "label": "Movie Name",
+    "required": true,
+    "search": true
+  },
+  {
+    "type": "select",
+    "name": "release_year",
+    "label": "Year of release",
+    "search": true,
+    "required": true,
+    "options": "years"
+  },
+  {
+    "type": "textarea",
+    "name": "desc",
+    "label": "Description"
+  },
+  {
+    "type": "text",
+    "name": "duration",
+    "label": "Duration"
+  },
+  {
+    "type": "text",
+    "name": "contentRating",
+    "label": "Content Rating"
+  },
+  {
+    "type": "text",
+    "name": "genre",
+    "label": "Genre"
+  },
+  {
+    "type": "date",
+    "name": "release_date",
+    "label": "Release Date"
+  },
+  {
+    "type": "text",
+    "name": "poster",
+    "label": "Poster"
+  },
+  {
+    "type": "number",
+    "name": "rating",
+    "label": "Rating",
+    "min": 1,
+    "max": 10
+  },
+  {
+    "type": "text",
+    "name": "language",
+    "label": "Language"
+  },
+  {
+    "type": "text",
+    "name": "producer",
+    "label": "Producer",
+    "search": true
+  },
+  {
+    "type": "text",
+    "name": "director",
+    "label": "Director",
+    "search": true
+  },
+  {
+    "type": "text",
+    "name": "writers",
+    "label": "Writers",
+    "search": true
+  },
+  {
+    "type": "text",
+    "name": "stars",
+    "label": "Stars",
+    "search": true
+  }
+]

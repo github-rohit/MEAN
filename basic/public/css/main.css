@@ -1,0 +1,362 @@
+html, body {
+	background: #F1F3F6;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	color: #3F3F3F;
+}
+html {
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	padding-bottom: 100px;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	color: #3F3F3F;
+}
+.navbar-default {
+	background: #263238;		
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-width: 0;
+	margin: 0;
+}
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:focus ,
+.navbar-default .navbar-nav li a:active {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #CCC;
+}
+.navbar-default .navbar-nav li:hover a{
+	color: #FFF;
+	background: #B52E31;
+}
+
+.page-header-top {
+	background: white;		
+	border-bottom: 1px solid #EAEAEA;
+	margin-bottom: 44px;
+}
+.page-header-top .container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.page-header-top h1 {
+	font-weight: lighter;
+	margin: 0;
+}
+.page-header-top a.back-link {
+	font-size: 12px;
+	color: #B52E31;
+}
+.page-header-top a .fa {
+	float: left;
+	margin-top: 4px;
+	margin-right: 4px;
+}
+.page-header-top .btn-add-float {
+	position: absolute;
+	right: 15px;
+	bottom: -22px;
+}
+
+.angular-js-search-list {
+	background: #FFF;
+	margin-bottom: 30px;
+	position: relative;
+}
+.angular-js-search-list .poster {
+	padding-left: 0;
+}
+.angular-js-search-list .poster img {
+	max-width: 100%;
+}
+.angular-js-search-list .information {
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}
+.angular-js-search-list .information h1{
+	margin-top: 0;
+	color: #B52E31;
+	font-weight: lighter;
+}
+.angular-js-search-list .information .header{
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 10px;
+}
+.angular-js-search-list .information .header span{
+	display: inline-block;
+	font-size: 13px;
+	color: #666;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+.angular-js-search-list .summary-item {
+	margin-bottom: 10px;
+}
+.angular-js-search-list .summary-item-label {
+	font-size: 12px;
+	color: #666;
+}
+.angular-js-search-list .btn-add-float {
+	background: #FFF;
+	right: 15px;
+	bottom: 15px;
+	font-size: 14px;
+	line-height: 44px;
+	color: #B52E31;
+	/*display: none;*/
+}
+.angular-js-search-list:hover .btn-add-float {
+	display: block;
+	color: #B52E31;
+}
+
+.footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #333;
+	color: white;
+}
+
+.angular-js-search-container {
+  text-align: center;
+	position: absolute;
+	top: 45%;
+	transform:translate(-50%, -45%);
+	left: 50%;
+}
+.search-page-heading {
+	font-size: 32px;
+	font-weight: lighter;
+	
+}
+.search-control {
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+	background: #F7F9FA;
+	margin-bottom: 15px;
+}
+.search-control button[type=button]{
+	border-width: 0 1px 0 0;
+    padding: 34px;
+}
+.search-control input[type=search]{
+	border: 0;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 48px;
+	font-weight: lighter;
+	outline: none;
+	background: transparent;
+}
+.search-control .dropdown-menu {
+	height: 220px;
+	overflow: auto;
+	top: 0;
+}
+.search-control .dropdown-menu li {
+	text-align: left;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+.search-control .dropdown-menu li {
+	text-align: left;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+.search-control .dropdown-menu li:hover {
+	background: #F7F9FA;
+}
+.search-control .dropdown-menu li.active {
+	color: #B52E31;
+	border-left: 2px solid #B52E31;
+	padding-left: 13px;
+}
+.search-btn {
+	min-width: 250px;
+	background: #B52E31;
+	border: 0;
+	font-size: 24px;
+	font-weight: lighter;
+	color: #FFF;
+	padding: 10px 15px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+.search-btn:hover,
+.search-btn:focus,
+.search-btn:active {
+	outline: none;
+	box-shadow: none;
+}
+
+/*NO RECORD*/
+.angular-js-no-record,
+.angular-js-error {
+	color: #666;
+}
+.angular-js-no-record .ouch,
+.angular-js-error .ouch {
+	font-size: 96px;
+	color: #CCC;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, .25);
+	font-weight: bold;
+}
+.angular-js-no-record h2{
+	font-weight: lighter;
+	margin-bottom: 30px;
+}
+
+/*ERROR*/
+.angular-js-error {
+	text-align: center;
+}
+
+/*CARD*/
+.card {
+	position: relative;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+.card-body.card-padding {
+	padding: 30px;
+}
+
+/*FORM*/
+.angular-form .form-group {
+	margin-bottom: 25px;
+}
+.angular-form .form-line {
+    position: relative;
+    vertical-align: top;
+}
+.angular-form .form-control {
+    position: relative;
+    background: transparent;
+    z-index: 1;
+	border-width: 0 0 1px 0;
+	border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+	box-shadow: none;
+    resize: none;
+}
+.angular-form .form-label  {
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 200ms;
+    transition-duration: 200ms;
+    font-weight: 400;
+    color: #666;
+    pointer-events: none;
+    white-space: nowrap;
+	margin-bottom: 0;
+}
+.angular-form .form-toggled .form-label  {
+    color: #959595;
+}
+.form-line:not(.disabled):after, 
+.form-line:not(.readonly):after {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    content: "";
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all;
+    -o-transition: all;
+    transition: all;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+.form-line:not([class*=has-]):after {
+    background: #B52E31;
+}
+.form-line.form-toggled:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.angular-form .btn {
+	border: 0;
+	border-radius: 0;
+	min-width: 100px;
+}
+.angular-form .btn-link {
+	font-weight: bold;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+	box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.btn-add-float {
+	position: absolute;
+	border-radius: 100%;
+	width: 44px;
+	height: 44px;
+	background: #B52E31;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+	font-size: 28px;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 40px;
+    text-align: center;
+	overflow: hidden;
+}
+
+.btn-add-float:hover,
+.btn-add-float:active,
+.btn-add-float:focus {
+	color: #FFF;
+	text-decoration: none;
+}
+.btn-add-float:hover {
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, .5);
+}
+
+.ripple:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle,#000 10%,transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10,10);
+    opacity: 0;
+    transition: transform .5s,opacity 1s;
+}
+.ripple:active:after {
+    transform: scale(0,0);
+    opacity: .2;
+    transition: 0s;
+}
